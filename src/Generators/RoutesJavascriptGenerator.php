@@ -49,7 +49,7 @@ class RoutesJavascriptGenerator
      */
     public function make($path, $name, array $options = array())
     {
-        $options += ['filter' => null, 'prefix' => null];
+        $options += array('filter' => null, 'prefix' => null);
 
         $this->parsedRoutes = $this->getParsedRoutes($options['filter'], $options['prefix']);
 
